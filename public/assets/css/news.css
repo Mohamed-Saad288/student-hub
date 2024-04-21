@@ -1,0 +1,119 @@
+body{
+    padding: 0;
+    margin: 0;
+
+}
+/* navbar */
+.navbar .navbar-brand{
+    padding-left: 140px;
+    font-size: 30px;
+}
+
+span{
+    color: #F34C0C;
+    font-family: 'Dancing Script', cursive;
+}
+.navbar-nav{
+    padding-left: 40px;
+}
+
+.navbar-collapse h6{
+    font-size: 20px;
+    padding: 10px;
+}
+.btn{
+    margin-right: 40px;
+    background-color: #F34C0C;
+    padding: 10px;
+    color: white;
+    border: 2px solid #F34C0C;
+}
+.btn:hover{
+    background-color: #be3c09;
+    border: 2px solid #be3c09;
+    color: #f1edec;
+    transition: 0.2s;
+}
+
+
+
+/* section one */
+
+body {
+    background:#eee;
+}
+.posts-content{
+    margin-top:20px;    
+}
+.ui-w-40 {
+    width: 40px !important;
+    height: auto;
+}
+.default-style .ui-bordered {
+    border: 1px solid rgba(24,28,33,0.06);
+}
+.ui-bg-cover {
+    background-color: transparent;
+    background-position: center center;
+    background-size: cover;
+}
+.ui-rect {
+    padding-top: 50% !important;
+}
+.ui-rect, .ui-rect-30, .ui-rect-60, .ui-rect-67, .ui-rect-75 {
+    position: relative !important;
+    display: block !important;
+    padding-top: 100% !important;
+    width: 100% !important;
+}
+.d-flex, .d-inline-flex, .media, .media>:not(.media-body), .jumbotron, .card {
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+}
+.bg-dark {
+    background-color: rgba(24,28,33,0.9) !important;
+}
+.card-footer, .card hr {
+    border-color: rgba(24,28,33,0.06);
+}
+.ui-rect-content {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+}
+.default-style .ui-bordered {
+    border: 1px solid rgba(24,28,33,0.06);
+}
+
+
+
+
+
+/* footer */
+.foot{
+    padding-top: 50px;
+}
+.footer .foot-h span{
+    color: #F34C0C;
+    font-family: 'Dancing Script', cursive;
+}
+.footer .short{
+    font-size: 15px;
+}
+.footer .location{
+    font-size: 13px;
+    margin-bottom: 60px;
+}
+.footer .location i{
+    font-size: 15px;
+    color: #F34C0C;
+    padding: 10px;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+

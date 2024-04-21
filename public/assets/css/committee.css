@@ -1,0 +1,89 @@
+body{
+    padding: 0;
+    margin: 0;
+
+}
+/* navbar */
+.navbar .navbar-brand{
+    padding-left: 140px;
+    font-size: 30px;
+}
+
+span{
+    color: #F34C0C;
+    font-family: 'Dancing Script', cursive;
+}
+.navbar-nav{
+    padding-left: 40px;
+}
+
+.navbar-collapse h6{
+    font-size: 20px;
+    padding: 10px;
+}
+.btn{
+    margin-right: 40px;
+    background-color: #F34C0C;
+    padding: 10px;
+    color: white;
+    border: 2px solid #F34C0C;
+}
+.btn:hover{
+    background-color: #be3c09;
+    border: 2px solid #be3c09;
+    color: #f1edec;
+    transition: 0.2s;
+}
+
+
+
+/* head */
+.head h5{
+    color: #F34C0C;
+}
+
+
+
+/* section one */
+
+
+.About p{
+    color: #8a8484;
+}
+
+
+.item p{
+    padding: 20px; 
+    font-size: 23px;   
+}
+.point1{
+    padding-top: 50px;
+}
+
+
+
+
+/* footer */
+.foot{
+    padding-top: 50px;
+}
+.footer .foot-h span{
+    color: #F34C0C;
+    font-family: 'Dancing Script', cursive;
+}
+.footer .short{
+    font-size: 15px;
+}
+.footer .location{
+    font-size: 13px;
+    margin-bottom: 60px;
+}
+.footer .location i{
+    font-size: 15px;
+    color: #F34C0C;
+    padding: 10px;
+}
+
+.footer a{
+    text-decoration: none;
+}

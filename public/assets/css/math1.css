@@ -1,0 +1,100 @@
+body{
+    padding: 0;
+    margin: 0;
+
+}
+/* navbar */
+.navbar .navbar-brand{
+    padding-left: 140px;
+    font-size: 30px;
+}
+
+span{
+    color: #F34C0C;
+    font-family: 'Dancing Script', cursive;
+}
+.navbar-nav{
+    padding-left: 40px;
+}
+
+.navbar-collapse h6{
+    font-size: 20px;
+    padding: 10px;
+}
+.btn{
+    margin-right: 40px;
+    background-color: #F34C0C;
+    padding: 10px;
+    color: white;
+    border: 2px solid #F34C0C;
+}
+.btn:hover{
+    background-color: #be3c09;
+    border: 2px solid #be3c09;
+    color: #f1edec;
+    transition: 0.2s;
+}
+
+
+
+/* head */
+.head h4{
+    color: #F34C0C;
+}
+.head .photo{
+    height: 800px;
+    background-image: url(../image/school-desk-with-textbooks-near-blackboard.jpg) ;
+    /* background-attachment: fixed; */
+    background-size: cover;
+
+}
+
+
+
+/* section two */
+
+.info h5 ,h6{
+    color: #F34C0C;
+    margin: 20px;
+}
+.info .dropdown .btn{
+    width: 70%;
+    background-color: #D9D9D9;
+    color: #000;
+    border: none;
+    margin: 20px;
+}
+.info .dropdown{
+    padding-right: 70px;
+}
+.info .dropdown-menu{
+    width: 70%;
+    direction: rtl;
+    float: right;
+}
+
+/* footer */
+.foot{
+    padding-top: 50px;
+}
+.footer .foot-h span{
+    color: #F34C0C;
+    font-family: 'Dancing Script', cursive;
+}
+.footer .short{
+    font-size: 15px;
+}
+.footer .location{
+    font-size: 13px;
+    margin-bottom: 60px;
+}
+.footer .location i{
+    font-size: 15px;
+    color: #F34C0C;
+    padding: 10px;
+}
+
+.footer a{
+    text-decoration: none;
+}
+

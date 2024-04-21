@@ -1,0 +1,106 @@
+body{
+    padding: 0;
+    margin: 0;
+
+}
+/* navbar */
+.navbar .navbar-brand{
+    padding-left: 140px;
+    font-size: 30px;
+}
+
+span{
+    color: #F34C0C;
+    font-family: 'Dancing Script', cursive;
+}
+.navbar-nav{
+    padding-left: 40px;
+}
+
+.navbar-collapse h6{
+    font-size: 20px;
+    padding: 10px;
+}
+.btn{
+    margin-right: 40px;
+    background-color: #F34C0C;
+    padding: 10px;
+    color: white;
+    border: 2px solid #F34C0C;
+}
+.btn:hover{
+    background-color: #be3c09;
+    border: 2px solid #be3c09;
+    color: #f1edec;
+    transition: 0.2s;
+}
+
+
+
+/* head */
+.head h5{
+    color: #F34C0C;
+}
+
+
+
+
+/* section one */
+.item{
+    margin-bottom: 20px;
+}
+.depart a{
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 10px;
+}
+.depart p{
+    /* margin-right: 70px ; */
+    margin-top: -45px;
+}
+
+/* section two */
+.info h4{
+    color: #F34C0C;
+    margin: 15px;
+}
+.info h5{
+    margin: 20px;
+}
+.info ul{
+    margin: 10px;
+    margin-right: 120px;
+    margin-bottom: 50px;
+}
+.job{
+    margin: 10px;
+}
+
+
+
+
+
+/* footer */
+.foot{
+    padding-top: 50px;
+}
+.footer .foot-h span{
+    color: #F34C0C;
+    font-family: 'Dancing Script', cursive;
+}
+.footer .short{
+    font-size: 15px;
+}
+.footer .location{
+    font-size: 13px;
+    margin-bottom: 60px;
+}
+.footer .location i{
+    font-size: 15px;
+    color: #F34C0C;
+    padding: 10px;
+}
+
+.footer a{
+    text-decoration: none;
+}
