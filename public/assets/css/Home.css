@@ -88,7 +88,7 @@ span{
     color: white;
     text-align: center;
     height: 900px;
-    background-image: url(../image/Rectangle\ 36.png);
+    background-image: url(/image/Rectangle\ 36.png);
     /* background-attachment: fixed; */
     background-size: cover;
 }
@@ -96,7 +96,7 @@ span{
     font-size: 100px;
     /* color: #02420a; */
     padding-top: 300px;
-    
+
 }
 
 .head h2{
@@ -193,8 +193,8 @@ span{
 
 
 .our-section .item p{
-    padding: 20px; 
-    font-size: 23px;   
+    padding: 20px;
+    font-size: 23px;
 }
 .our-section .item a{
     text-decoration: none;
@@ -224,7 +224,7 @@ span{
 
 .book .item a{
     text-align: center;
-    
+
 }
 
 /* footer */
