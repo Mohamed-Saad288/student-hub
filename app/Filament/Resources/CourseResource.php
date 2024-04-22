@@ -30,7 +30,7 @@ class CourseResource extends Resource
                     TextInput::make('name')
                         ->required()
                         ->string(),
-                    TextInput::make('description')
+                    TextInput::make('instructor')
                         ->required()
                         ->string(),
                     TextInput::make('link')

@@ -9,5 +9,9 @@ use Illuminate\Database\Eloquent\Model;
 class Course extends Model
 {
     use HasFactory , HasUuids;
-
+   protected $fillable = [
+       'name',
+       'instructor',
+       'link'
+   ];
 }
