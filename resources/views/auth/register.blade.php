@@ -24,7 +24,7 @@
         <!-- signin link  -->
 
         <div >
-            <p class="m-2 pb-3 text-center">Already have an account?<a href="login.html" class=" fw-bold">Sign in now</a></p>
+            <p class="m-2 pb-3 text-center">Already have an account?<a href="{{ route('login.store') }}" class=" fw-bold">Sign in now</a></p>
         </div>
     </form>
 </x-register-layout>

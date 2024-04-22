@@ -14,7 +14,7 @@
 <!-- forgot link  -->
 
 <div class="col">
-    <a href="#!">Forgot password?</a>
+    <a href="{{ route('password.request') }}">Forgot password?</a>
 </div>
 
 <!--sign up button  -->
