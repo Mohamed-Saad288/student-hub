@@ -13,6 +13,6 @@ class Student extends Model
 
     public function competitions():BelongsToMany
     {
-        $this->belongsToMany(Competition::class);
+      return  $this->belongsToMany(Competition::class);
     }
 }

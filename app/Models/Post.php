@@ -12,7 +12,12 @@ class Post extends Model
     use HasFactory , HasUuids;
     use Sluggable;
 
-
+    protected  $fillable = [
+        'name',
+        'image',
+        'slug',
+        'description'
+    ];
     public function sluggable(): array
     {
         return [
