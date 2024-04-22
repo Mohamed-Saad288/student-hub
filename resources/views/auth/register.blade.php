@@ -12,6 +12,7 @@
         <!-- password input -->
 
         <x-form.input label="Password" name="password" placeHolder="Enter Your Password" type="password" icon="icon bi-eye" />
+        <p style="font-size: 12px;color: gray;font-weight: bolder">Password must be at least 10, at least one lowercase letter,at least one uppercase letter, at least one digit, must contain a special character  </p>
 
         <!--confirm password input -->
 

@@ -1,157 +1,23 @@
-
-
 <x-layout>
 
 <!-- head -->
-<section class="head">
-    <div class="container">
-        <h1>Student<span>Hub</span></h1>
-        <h2>مرحبا بكم</h2>
-    </div>
-</section>
 
+    @include('_head');
 
 <!-- section one -->
-<section class="post pb-5">
-    <div class="row ">
-        <div class="point1 text-center mt-5 mb-5  col-2">
-            <img  src="image/Group 15.png">
-        </div>
-        <div class="About col-lg-8 text-center  mt-5  p-5">
-            <h1 class="m-2 mb-4 p-2">أحدث الأخبار</h1>
-            <p>هيكل تنظيمي لرعاية الطلاب كلية العلوم جامعة المنصورة</p>
-        </div>
-        <div class="point1 text-center mt-5 mb-5  col-2">
-            <img src="image/Group 15.png">
-        </div>
-    </div>
+<x-post-header >
 
-    <section class="move">
-        <div class="slide-container swiper">
-            <div class="slide-content">
-                <div class="card-wrapper swiper-wrapper">
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="image/Rectangle 53.png" class="card-img-top" alt="Your Image">
+    <!-- post style -->
 
-                            </div>
-                            <div class="card-body ">
-                                <p>Student<span>Hub</span>
-                                    <img src="image/Ellipse 13.png">
-                                </p>
-                                <h5 class="card-title" dir="rtl">الاعلان</h5>
-                                <p class="card-text" dir="rtl">اعلان تعلن لجنة أسر كليات الجامعة عن مسابقة شطرنج من الفتره الاثنين الموافق ١١/٢٠ وحتى الاربعاء الموافق ١١/٢٢ بالمخيم الكشفى الساعه (١٠صباحا ) من يرغب الاشتراك عليه التسجيل برعاية الطلاب..</p>
-                                <div class="card-footer">
+     <x-post-style>
 
-                                    <a href="news.html" dir="rtl" class="btn">المزيد</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+         <x-post-card :posts="$posts" />
 
+    </x-post-style>
 
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="image/Rectangle 53.png" class="card-img-top" alt="Your Image">
+    <!-- end post style -->
 
-                            </div>
-                            <div class="card-body ">
-                                <p>Student<span>Hub</span>
-                                    <img src="image/Ellipse 13.png">
-                                </p>
-                                <h5 class="card-title" dir="rtl">الاعلان</h5>
-                                <p class="card-text" dir="rtl">اعلان تعلن لجنة أسر كليات الجامعة عن مسابقة شطرنج من الفتره الاثنين الموافق ١١/٢٠ وحتى الاربعاء الموافق ١١/٢٢ بالمخيم الكشفى الساعه (١٠صباحا ) من يرغب الاشتراك عليه التسجيل برعاية الطلاب..</p>
-                                <div class="card-footer">
-
-                                    <a href="news.html" dir="rtl" class="btn">المزيد</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="image/Rectangle 53.png" class="card-img-top" alt="Your Image">
-
-                            </div>
-                            <div class="card-body ">
-                                <p>Student<span>Hub</span>
-                                    <img src="image/Ellipse 13.png">
-                                </p>
-                                <h5 class="card-title" dir="rtl">الاعلان</h5>
-                                <p class="card-text" dir="rtl">اعلان تعلن لجنة أسر كليات الجامعة عن مسابقة شطرنج من الفتره الاثنين الموافق ١١/٢٠ وحتى الاربعاء الموافق ١١/٢٢ بالمخيم الكشفى الساعه (١٠صباحا ) من يرغب الاشتراك عليه التسجيل برعاية الطلاب..</p>
-                                <div class="card-footer">
-
-                                    <a href="news.html" dir="rtl" class="btn">المزيد</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="image/Rectangle 53.png" class="card-img-top" alt="Your Image">
-
-                            </div>
-                            <div class="card-body ">
-                                <p>Student<span>Hub</span>
-                                    <img src="image/Ellipse 13.png">
-                                </p>
-                                <h5 class="card-title" dir="rtl">الاعلان</h5>
-                                <p class="card-text" dir="rtl">اعلان تعلن لجنة أسر كليات الجامعة عن مسابقة شطرنج من الفتره الاثنين الموافق ١١/٢٠ وحتى الاربعاء الموافق ١١/٢٢ بالمخيم الكشفى الساعه (١٠صباحا ) من يرغب الاشتراك عليه التسجيل برعاية الطلاب..</p>
-                                <div class="card-footer">
-
-                                    <a href="news.html" dir="rtl" class="btn">المزيد</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="image/Rectangle 53.png" class="card-img-top" alt="Your Image">
-
-                            </div>
-                            <div class="card-body ">
-                                <p>Student<span>Hub</span>
-                                    <img src="image/Ellipse 13.png">
-                                </p>
-                                <h5 class="card-title" dir="rtl">الاعلان</h5>
-                                <p class="card-text" dir="rtl">اعلان تعلن لجنة أسر كليات الجامعة عن مسابقة شطرنج من الفتره الاثنين الموافق ١١/٢٠ وحتى الاربعاء الموافق ١١/٢٢ بالمخيم الكشفى الساعه (١٠صباحا ) من يرغب الاشتراك عليه التسجيل برعاية الطلاب..</p>
-                                <div class="card-footer">
-
-                                    <a href="news.html" dir="rtl" class="btn">المزيد</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="swiper-pagination"></div>
-
-        </div>
-    </section>
-
-
-
-
-    <!-- <div class="back container">
-
-    </div> -->
-</section>
+</x-post-header>
 
 
 <!-- section two -->
