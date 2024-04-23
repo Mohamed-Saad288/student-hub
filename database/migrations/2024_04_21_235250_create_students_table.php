@@ -14,10 +14,11 @@ return new class extends Migration
         Schema::create('students', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->string('name');
-            $table->integer('college_id')->unique();
+            $table->integer('college_id');
             $table->string('phone');
             $table->unsignedSmallInteger('level');
             $table->string('department');
+            $table->foreignUuid('competition_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }

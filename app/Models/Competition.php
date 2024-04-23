@@ -13,6 +13,11 @@ class Competition extends Model
     use HasFactory , HasUuids ;
     use Sluggable;
 
+    protected $fillable = [
+        'name',
+        'description',
+        'image'
+    ];
     public function sluggable(): array
     {
         return [
@@ -21,7 +26,7 @@ class Competition extends Model
             ]
         ];
     }
-    public function students():HasMany
+    public function student():HasMany
     {
         return $this->hasMany(Student::class);
     }
