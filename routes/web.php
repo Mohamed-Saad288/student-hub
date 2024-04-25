@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+require __DIR__.'/auth.php';
+
 
 Route::get('/',[PostController::class,'index']);
 
@@ -34,7 +36,8 @@ Route::middleware('auth')->group(function (){
 
     Route::post('student/{competition}/store',[StudentController::class,'store'])
         ->name('student.store');
+
+    Route::get('posts/{post:slug}',PostController::class,'show');
 });
 
 
-require __DIR__.'/auth.php';

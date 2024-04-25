@@ -45,57 +45,5 @@
         </div>
     </div>
 
-    <div class="nav-right flex-div ">
-        <div class="navbar-collapse" id="navbarText">
-            @auth()
-                <h6>{{ auth()->user()->name }}</h6>
-                @can('admin')
-                    <a  class="btn1 " href="/admin" role="button" type="submit">Admin</a>
-                @endcan
-                <form action="{{route('logout')}}" method="POST">
-                    @csrf
-                    <button class=" btn btn-lg nav-link" type="submit">Logout</button>
-                </form>
 
-            @else
-                <a  class="btn1 " href="{{ route('login') }}" role="button" type="submit">LogIn</a>
-                <a  class="btn  " href="{{ route('register.create') }}" role="button" type="submit">SignUp</a>
-            @endauth
-        </div>
-    </div>
 </nav>
-
-{{$slot }}
-<section class="footer">
-    <!-- Footer -->
-    <footer class=" foot text-center text-white" style="background-color: #080808;">
-        <div class="container col-6 p-4 pb-0">
-            <section class="foot-h">
-                <h2 class="fw-bold mb-2 ">Student<span>Hub</span></h2>
-                <p class="short">الرحلة الأكاديمية هي فرصة لتوسيع آفاقك وتطوير مهاراتك. استثمر وقتك وجهدك في التعلم بشكل فعّال، ولا تتردد في استكشاف ميادين جديدة، فالتحديات هي فرص للنمو والتقدم."</p>
-            </section>
-            <section class="location">
-                <p>
-                    <i class="bi bi-geo-alt"></i>
-                    Mansoura University, Faculty of  Science, Dakahlia Governorate, Egypt.
-                </p>
-            </section>
-        </div>
-        <hr>
-        <!-- Copyright -->
-        <div class="text-center pb-2" >
-            Copyright© 2024
-            <a class="text-white" href="#">All Rights Reserved by Glitch Hunters Team.</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
-</section>
-
-
-<script src="assets/js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
-<script src="assets/js/code.jquery.com_jquery-3.7.1.min.js"></script>
-<script src="assets/js/bootstrap.js"></script>
-<script src="assets/js/courses.js"></script>
-
-</body>
-</html>
