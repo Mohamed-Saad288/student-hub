@@ -28,7 +28,9 @@ span{
     font-size: 20px;
     color: #000;
 }
-
+.navbar .navbar-brand{
+    font-size: 40px;
+}
 
 .btn{
     font-size: 15px;
@@ -122,6 +124,7 @@ span{
     padding: 0px 0  ;
 }
 .post .card{
+
     width: 30%;
     margin: 10px;
     margin-left: 25px;
@@ -207,6 +210,8 @@ span{
     padding-top: 50px;
 }
 .our-section .item img{
+        box-shadow: 0 0 10px #F34C0C;
+
     width: 200px;
     border-radius: 100%;
 }
@@ -220,10 +225,20 @@ span{
 .book .item{
     margin: 20px;
     text-align: center;
+
+}
+.book .item img{
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
 }
 
 .book .item a{
     text-align: center;
+    margin: auto;
+    width: auto;
 
 }
 
@@ -250,4 +265,57 @@ span{
 
 .footer a{
     text-decoration: none;
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
+    .nav-middle .nav-item{
+        font-size: 15px;
+    }
+    .book .item img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .book .container .item{
+        width: 40%;
+    }
+
+}
+@media screen and (max-width: 991px) {
+    .point1{
+        display: none;
+    }
+}
+@media screen and (max-width: 779px) {
+    .head h1{
+        text-align: center;
+    }
+    .book .container .item{
+        width: 100%;
+    }
+    .nav-right{
+        display: none;
+    }
+    .move .card{
+        width: 70%;
+        text-align: center;
+    }
+    .move .card .btn{
+        margin-left: 20px;
+
+    }
+
+}
+@media screen and (max-width: 535px) {
+    .head h1{
+        font-size: 30px;
+    }
+    .head h2{
+        font-size: 40px;
+        text-align: center;
+    }
 }

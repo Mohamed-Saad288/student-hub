@@ -17,7 +17,10 @@ span{
 
 
 /*start login*/
+.card {
+    box-shadow: 0 0 10px #F34C0C;
 
+}
 .card-body span{
     color: #F34C0C;
     font-family: 'Dancing Script', cursive;}
@@ -34,7 +37,7 @@ span{
 }
 
 .form-outline .input-container .icon{
-    position: absolute; 
+    position: absolute;
     padding-top: 5px;
 
 }

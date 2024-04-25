@@ -7,7 +7,7 @@
     <!---->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- stylesheet -->
-    <link rel="stylesheet" href="assets/css/Home.css">
+    <link rel="stylesheet" href="assets/css/courses.css">
     <!--normalize sheet-->
     <link rel="stylesheet" href="assets/css/normalize.css">
     <!--font-awesome-->
@@ -21,11 +21,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-
-    <!-- swiper css -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!--title of page-->
-    <title>Home</title>
+    <title>Courses</title>
     <link rel="icon"  type="image/x-icon" href="image/new.png">
 
 
@@ -34,68 +31,41 @@
 </head>
 <body>
 
+<nav class="flex-div">
+    <div class="nav-left flex-div">
+        <!-- <img src="image/menu.png" alt="" class="menu-icon"> -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light flex-div">
-    <a class="navbar-brand mx-5" href="/">Student<span>Hub</span></a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-        <div class="nav-middle flex-div">
-            <div class="search-box flex-div">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="whoUs.html">من نحن</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="courses.html">كورسات شرح</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">الأماكن</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://myu.mans.edu.eg/">المنصة الطلابية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('competition.index') }}"> المسابقات</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#depart"> الأقسام العلمية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section2">الرعاية</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
+        <a class="navbar-brand " href="#">Student<span>Hub</span></a>
 
     </div>
+    <div class="nav-middle flex-div">
+        <div class="search-box flex-div">
+            <input type="text" placeholder="search">
+            <img src="image/search.png" alt="">
+        </div>
+    </div>
+
     <div class="nav-right flex-div ">
         <div class="navbar-collapse" id="navbarText">
             @auth()
-             <h6>{{ auth()->user()->name }}</h6>
-            @can('admin')
-                <a  class="btn1 " href="/admin" role="button" type="submit">Admin</a>
-            @endcan
-                    <form action="{{route('logout')}}" method="POST">
-                @csrf
-            <button class=" btn btn-lg nav-link" type="submit">Logout</button>
-            </form>
+                <h6>{{ auth()->user()->name }}</h6>
+                @can('admin')
+                    <a  class="btn1 " href="/admin" role="button" type="submit">Admin</a>
+                @endcan
+                <form action="{{route('logout')}}" method="POST">
+                    @csrf
+                    <button class=" btn btn-lg nav-link" type="submit">Logout</button>
+                </form>
 
             @else
-            <a  class="btn1 " href="{{ route('login') }}" role="button" type="submit">LogIn</a>
-            <a  class="btn  " href="{{ route('register.create') }}" role="button" type="submit">SignUp</a>
+                <a  class="btn1 " href="{{ route('login') }}" role="button" type="submit">LogIn</a>
+                <a  class="btn  " href="{{ route('register.create') }}" role="button" type="submit">SignUp</a>
             @endauth
         </div>
     </div>
 </nav>
 
-{{ $slot }}
-
-<!-- footer -->
-
+{{$slot }}
 <section class="footer">
     <!-- Footer -->
     <footer class=" foot text-center text-white" style="background-color: #080808;">
@@ -122,15 +92,10 @@
 </section>
 
 
-
-<!-- swiper js -->
-<script src="assets/js/swiper-bundle.min.js"></script>
-
-<!-- javaScript -->
-<script src="assets/js/home.js"></script>
-<!-- bootstrap -->
 <script src="assets/js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
 <script src="assets/js/code.jquery.com_jquery-3.7.1.min.js"></script>
 <script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/courses.js"></script>
+
 </body>
 </html>

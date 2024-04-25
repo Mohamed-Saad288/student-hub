@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\CompetitionController;
+use App\Http\Controllers\CourseController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +17,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/',[PostController::class,'index']);
+
+
+Route::middleware('auth')->group(function (){
+
+    Route::get('/courses',[CourseController::class,'index'])
+        ->name('courses.index');
+
+    Route::get('/competitions',[CompetitionController::class,'index'])
+        ->name('competition.index');
+
+    Route::get('{competition:slug}',[StudentController::class,'create'])
+        ->name('student.create');
+
+    Route::post('student/{competition}/store',[StudentController::class,'store'])
+        ->name('student.store');
+});
+
 
 require __DIR__.'/auth.php';
