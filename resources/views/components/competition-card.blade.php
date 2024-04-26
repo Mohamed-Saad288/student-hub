@@ -8,7 +8,7 @@
             class="ing"
             src="{{ asset($competition->image) ?
                 asset('storage/' . $competition->image) :
-                 asset('image/Rectangle 53.png') }}"
+                 asset('image/top-view-islamic.jpg') }}"
             alt="Competition Image">
 
         <p class="time " style="float: right;padding-right: 60px;">{{ $competition->created_at->diffForHumans() }}</p>

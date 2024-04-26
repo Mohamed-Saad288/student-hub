@@ -110,7 +110,7 @@ span{
 
 
 
-/* ***********sidebar************ */
+/* *********sidebar********** */
 /* .sidebar{
     background: #fff;
     width: 15%;
@@ -144,7 +144,7 @@ span{
 } */
 
 
-/* ***************main**************** */
+/* *************main************** */
 body{
     background-color: #ddd;
 }
@@ -157,15 +157,15 @@ body{
     */
 }
 /* .card-container{ */
-    /* width: 85%;
-    display: flex;
-    justify-content: space-between;
-    margin: 60px auto; */
-    /* display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 10px;
-    grid-row-gap: 30px;
-    margin-top: 15px; */
+/* width: 85%;
+display: flex;
+justify-content: space-between;
+margin: 60px auto; */
+/* display: grid;
+grid-template-columns: auto auto auto;
+grid-column-gap: 10px;
+grid-row-gap: 30px;
+margin-top: 15px; */
 
 
 .card{
@@ -183,7 +183,7 @@ body{
 }
 .card:hover{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 
 .card h2{
@@ -225,33 +225,6 @@ button{
 
 
 
-/* footer */
-.foot{
-    padding-top: 50px;
-}
-.footer .foot-h span{
-    color: #F34C0C;
-    font-family: 'Dancing Script', cursive;
-}
-.footer .short{
-    font-size: 15px;
-}
-.footer .location{
-    font-size: 13px;
-    margin-bottom: 60px;
-}
-.footer .location i{
-    font-size: 15px;
-    color: #F34C0C;
-    padding: 10px;
-}
-
-.footer a{
-    text-decoration: none;
-}
-
-
-
 
 @media screen and (max-width: 780px) {
 
@@ -270,12 +243,12 @@ button{
     }
     .nav-middle .search-box img{
         padding-right: 20px;
-}
+    }
 }
 
 @media screen and (max-width: 400px) {
     .card-container .card{
         width: 70%;
-    margin: 10px 40px;
+        margin: 10px 40px;
     }
 }

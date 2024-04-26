@@ -23,7 +23,11 @@ require __DIR__.'/auth.php';
 Route::get('/',[PostController::class,'index']);
 
 
+
 Route::middleware('auth')->group(function (){
+
+    Route::get('{post:slug}',[PostController::class,'show'])
+        ->name('post.show');
 
     Route::get('/courses',[CourseController::class,'index'])
         ->name('courses.index');
@@ -37,7 +41,8 @@ Route::middleware('auth')->group(function (){
     Route::post('student/{competition}/store',[StudentController::class,'store'])
         ->name('student.store');
 
-    Route::get('posts/{post:slug}',PostController::class,'show');
+
 });
+
 
 

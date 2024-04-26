@@ -23,6 +23,6 @@ class StudentController extends Controller
             'department' => $request['department'],
             'competition_id' => $competition->id
         ]);
-        return redirect('/');
+        return redirect('/')->with('success','تم التسجيل  بنجاح انتظر رساله');
     }
 }

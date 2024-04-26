@@ -9,8 +9,13 @@ class CourseController extends Controller
 {
     public function index()
     {
-        $courses = Course::latest()->get();
 
-        return view('course.index',['courses' => $courses]);
+        return view('course.index', ['courses' =>
+            Course::
+            latest()->filter
+            (request(['search']))
+                ->SimplePaginate(6)->withQueryString()
+
+        ]);
     }
 }

@@ -7,7 +7,7 @@
         <div class="row">
             <div class="card col-4">
                 <h2>{{ $course->name }}</h2>
-                <p>{{ $course->discription }}</p>
+                <p>{{ $course->description }}</p>
                 <span>{{ $course->instructor }}</span>
                 <a href="{{ $course->link }}"><button>open</button></a>
             </div>

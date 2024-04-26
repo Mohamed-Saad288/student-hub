@@ -6,7 +6,6 @@ use App\Filament\Resources\CourseResource\Pages;
 use App\Filament\Resources\CourseResource\RelationManagers;
 use App\Models\Course;
 use Filament\Forms;
-use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -22,8 +21,6 @@ class CourseResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-book-open';
     protected static ?int $navigationSort = 6;
-
-
     protected static ?string $navigationGroup = 'كورسات الطلاب';
 
     public static function form(Form $form): Form
@@ -32,14 +29,13 @@ class CourseResource extends Resource
             ->schema([
                 Forms\Components\Card::make()->schema([
                     TextInput::make('name')
-                        ->required()
-                        ->string(),
-                    TextInput::make('instructor')
-                        ->required()
-                        ->string(),
-                    TextInput::make('link')
-                        ->required()
-                ])
+                    ->required()
+                    ->string(),
+                TextInput::make('description')
+                    ->string(),
+                TextInput::make('instructor'),
+                TextInput::make('link'),
+                    ])
             ]);
     }
 
@@ -51,8 +47,7 @@ class CourseResource extends Resource
                     ->sortable()
                     ->searchable()
                     ->limit(50),
-                TextColumn::make('instructor')
-                    ->searchable()
+                TextColumn::make('description')
                     ->limit(20),
             ])
             ->filters([

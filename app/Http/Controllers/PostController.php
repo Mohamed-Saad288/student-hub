@@ -13,8 +13,8 @@ class PostController extends Controller
 
         return view('home',['posts' => $posts]);
     }
-    public function show()
+    public function show(Post $post)
     {
-
+        return view('post.show',['post' => $post ]);
     }
 }

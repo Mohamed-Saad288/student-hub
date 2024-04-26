@@ -12,6 +12,15 @@ class Course extends Model
    protected $fillable = [
        'name',
        'instructor',
-       'link'
+       'link',
+       'description'
    ];
+    public function scopeFilter($query , array $filters ) // course->filter
+    {
+        if ($filters['search'] ?? false) {
+        $query->where('name', 'like', '%' . request('search') . '%')
+            ->orWhere('instructor' , 'like' , '%' .request('search') . '%')
+            ->orWhere('description' , 'like' , '%' .request('search') . '%');
+    }
+    }
 }

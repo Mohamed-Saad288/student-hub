@@ -47,6 +47,8 @@ class StudentResource extends Resource
                     TextInput::make('department')
                     ->required()
                     ->string(),
+                    Select::make('competition_id')
+                        ->relationship(name: 'competition', titleAttribute: 'name'),
                 ])
             ]);
     }

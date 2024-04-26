@@ -42,6 +42,7 @@ class CompetitionResource extends Resource
                         ->string(),
                     TextInput::make('description')
                         ->required()
+                        ->string()
                 ])
             ]);
     }

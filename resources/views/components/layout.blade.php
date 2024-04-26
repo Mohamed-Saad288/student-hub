@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <!--font-awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css -->
@@ -34,6 +35,9 @@
 </head>
 <body>
 
+<div class="loading-screen" id="loading-screen">
+    <img class="loader" src="image/new.png" alt="image">
+</div>
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light flex-div">
     <a class="navbar-brand mx-5" href="/">Student<span>Hub</span></a>
@@ -49,7 +53,7 @@
                         <a class="nav-link" href="whoUs.html">من نحن</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="courses.html">كورسات شرح</a>
+                        <a class="nav-link" href="{{ route('courses.index') }}">كورسات شرح</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">الأماكن</a>
@@ -95,7 +99,7 @@
 {{ $slot }}
 
 <!-- footer -->
-
+<x-flash-message />
 <section class="footer">
     <!-- Footer -->
     <footer class=" foot text-center text-white" style="background-color: #080808;">

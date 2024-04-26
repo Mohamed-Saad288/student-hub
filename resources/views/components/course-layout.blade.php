@@ -35,12 +35,15 @@
     <div class="nav-left flex-div">
         <!-- <img src="image/menu.png" alt="" class="menu-icon"> -->
 
-        <a class="navbar-brand " href="#">Student<span>Hub</span></a>
+        <a class="navbar-brand " href="/">Student<span>Hub</span></a>
 
     </div>
     <div class="nav-middle flex-div">
         <div class="search-box flex-div">
-            <input type="text" placeholder="search">
+            <form method="GET" action="{{ route('courses.index') }}">
+            <input type="text" name="search" placeholder="search" value="{{request('search')}}"
+            >
+            </form>
             <img src="image/search.png" alt="">
         </div>
     </div>
