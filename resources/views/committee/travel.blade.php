@@ -7,12 +7,11 @@
     <!---->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- stylesheet -->
-    <link rel="stylesheet" href="assets/css/Home.css">
+    <link rel="stylesheet" href="assets/css/committee.css">
     <!--normalize sheet-->
     <link rel="stylesheet" href="assets/css/normalize.css">
     <!--font-awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css -->
@@ -22,11 +21,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-
-    <!-- swiper css -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!--title of page-->
-    <title>Home</title>
+    <title>لجنه الجواله و الخدمة العامة</title>
     <link rel="icon"  type="image/x-icon" href="image/new.png">
 
 
@@ -34,71 +30,57 @@
 
 </head>
 <body>
-
 <div class="loading-screen" id="loading-screen">
     <img class="loader" src="image/new.png" alt="image">
 </div>
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light flex-div">
-    <a class="navbar-brand mx-5" href="/">Student<span>Hub</span></a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-        <div class="nav-middle flex-div">
-            <div class="search-box flex-div">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="whoUs.html">من نحن</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('courses.index') }}"> شرح</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">الأماكن</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://myu.mans.edu.eg/">المنصة الطلابية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('competitions.index') }}"> المسابقات</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#depart"> الأقسام العلمية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section2">الرعاية</a>
-                    </li>
-                </ul>
+
+<!-- section one -->
+<section id="depart" class="book pb-5">
+    <div class="row ">
+        <div class="point1 text-center mt-5 mb-5  col-2">
+            <img  src="image/Group 15.png">
+        </div>
+        <div class="About col-lg-8 text-center  mt-5 mb-5  p-5">
+            <h1 class="m-2 mb-4 p-2">الأنشطة لجنة الجوال والخدمة العامة </h1>
+            <p dir="rtl">* اكتشاف المواهب الفنية بين الطلاب وتنميتها وتشجيعها كذلك إقامة المعارض الفنية والحفلات لإظهار مواهب الطلاب وتشجيعهم .</p>
+
+        </div>
+        <div class="point1 text-center mt-5 mb-5  col-2">
+            <img src="image/Group 15.png">
+        </div>
+    </div>
+
+
+    <div class="container ">
+        <div class="row text-center">
+            <div class="item col-lg-6">
+                <img src="image/hiking-men-conquer-mountain-peak-adventure-awaits-generative-ai.jpg" width="300" height="250" alt="user1">
+                <P>المشاركه في الدروة الكشافيه علي مستوي الجامعه</P>
             </div>
-        </div>
 
+            <div class="item col-lg-6">
+                <img src="image/2301.q702.034.S.m.jpg" width="300" height="250" alt="user1">
+                <P>ندوات توعوية للجواله</P>
+            </div>
 
-    </div>
-    <div class="nav-right flex-div ">
-        <div class="navbar-collapse" id="navbarText">
-            @auth()
-            @can('admin')
-                <a  class="btn1 " href="/admin" role="button" type="submit">Admin</a>
-            @endcan
-                    <form action="{{route('logout')}}" method="POST">
-                @csrf
-            <button class=" btn btn-lg nav-link" type="submit">Logout</button>
-            </form>
+            <div class="item col-lg-6">
+                <img src="image/top-view-sewing-thread-with-measuring-tape-scissors.jpg" width="300" height="250" alt="user3">
+                <P>ورشة مشغولات يدويه</P>
+            </div>
+            <div class="item col-lg-6">
+                <img src="image/full-shot-happy-senior-friends-night.jpg" width="300" height="250" alt="user3">
+                <P>حفلات سمر</P>
+            </div>
 
-            @else
-            <a  class="btn1 " href="{{ route('login') }}" role="button" type="submit">LogIn</a>
-            <a  class="btn  " href="{{ route('register.create') }}" role="button" type="submit">SignUp</a>
-            @endauth
         </div>
     </div>
-</nav>
+</section>
 
-{{ $slot }}
 
 <!-- footer -->
-<x-flash-message />
+
 <section class="footer">
     <!-- Footer -->
     <footer class=" foot text-center text-white" style="background-color: #080808;">
@@ -123,15 +105,7 @@
         <!-- Copyright -->
     </footer>
 </section>
-
-
-
-<!-- swiper js -->
-<script src="assets/js/swiper-bundle.min.js"></script>
-
-<!-- javaScript -->
-<script src="assets/js/home.js"></script>
-<!-- bootstrap -->
+<script src="assets/js/committee.js"></script>
 <script src="assets/js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
 <script src="assets/js/code.jquery.com_jquery-3.7.1.min.js"></script>
 <script src="assets/js/bootstrap.js"></script>

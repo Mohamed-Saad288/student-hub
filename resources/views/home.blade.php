@@ -32,21 +32,21 @@
 
     <!-- committees cards -->
 
-    <x-committees-card name="اللجنة الرياضية" image="image/Ellipse 5.png"/>
+    <x-committees-card name="اللجنة الرياضية" image="image/Ellipse 5.png" url="/sports"/>
 
-    <x-committees-card name="اللجنة الثقافية" image="image/Ellipse 12.png"/>
+    <x-committees-card name="اللجنة الثقافية" image="image/Ellipse 12.png" url="/cultural"/>
 
-    <x-committees-card name="اللجنة العلمية" image="image/Ellipse 7.png"/>
+    <x-committees-card name="اللجنة العلمية" image="image/Ellipse 7.png" url="/science"/>
 
-    <x-committees-card name="اللجنة الاجتماعية" image="image/Ellipse 8.png"/>
+    <x-committees-card name="اللجنة الاجتماعية" image="image/Ellipse 8.png" url="/social"/>
 
-    <x-committees-card name="اللجنة الفنية" image="image/Ellipse 9.png"/>
+    <x-committees-card name="اللجنة الفنية" image="image/Ellipse 9.png" url="/art"/>
 
-    <x-committees-card name="لجنة الجوالة والخدمة العامة" image="image/Ellipse 10.png"/>
+    <x-committees-card name="لجنة الجوالة والخدمة العامة" image="image/Ellipse 10.png" url="/travel"/>
 
-    <x-committees-card name="الاسر الطلابية" image="image/Ellipse 11.png"/>
+    <x-committees-card name="الاسر الطلابية" image="image/Ellipse 11.png" url="/family"/>
 
-    <x-committees-card name="صندوق التكافل" image="image/WhatsApp Image 2024-04-18 at 8.42.24 PM.jpeg"/>
+    <x-committees-card name="صندوق التكافل" image="image/WhatsApp Image 2024-04-18 at 8.42.24 PM.jpeg" url="/takeful"/>
 
     <!-- end committees cards -->
 

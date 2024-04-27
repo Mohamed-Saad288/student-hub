@@ -21,7 +21,6 @@
             <p class="card-text" dir="rtl">{{ $post->description }}</p>
             <div class="card-footer">
 
-                <a href="{{ route('post.show',$post->slug) }}" dir="rtl" class="btn">المزيد</a>
             </div>
         </div>
     </div>

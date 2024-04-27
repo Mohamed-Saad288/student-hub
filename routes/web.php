@@ -17,32 +17,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+
 require __DIR__.'/auth.php';
 
-
-Route::get('/',[PostController::class,'index']);
-
+require __DIR__.'/committee.php';
 
 
-Route::middleware('auth')->group(function (){
-
-    Route::get('{post:slug}',[PostController::class,'show'])
-        ->name('post.show');
-
-    Route::get('/courses',[CourseController::class,'index'])
-        ->name('courses.index');
-
-    Route::get('/competitions',[CompetitionController::class,'index'])
-        ->name('competition.index');
-
-    Route::get('{competition:slug}',[StudentController::class,'create'])
-        ->name('student.create');
-
-    Route::post('student/{competition}/store',[StudentController::class,'store'])
-        ->name('student.store');
-
-
+Route::middleware('auth')->group(function () {
+    Route::get('/courses', [CourseController::class, 'index'])->name('courses.index');
+    Route::get('/competitions', [CompetitionController::class, 'index'])->name('competitions.index');
+    Route::get('/{competition:slug}', [StudentController::class, 'create'])->name('student.create');
+    Route::post('/student/{competition}/store', [StudentController::class, 'store'])->name('student.store');
 });
+
+
+Route::get('/', [PostController::class, 'index']);
 
 
 
