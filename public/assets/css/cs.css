@@ -1,34 +1,83 @@
-body{
-    padding: 0;
+*{
     margin: 0;
-
+    padding: 0;
+    box-sizing: border-box;
 }
-/* navbar */
-.navbar .navbar-brand{
-    padding-left: 140px;
-    font-size: 30px;
+
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+nav{
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px #F34C0C;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 span{
     color: #F34C0C;
     font-family: 'Dancing Script', cursive;
 }
-.navbar-nav{
-    padding-left: 40px;
+
+
+.nav-left a{
+    width: 22px;
+    margin-right: 25px;
+    font-size: 30px;
+}
+.nav-left .menu-icon{
+    width: 22px;
+    margin-right: 25px;
 }
 
+
+.btn{
+    font-size: 15px;
+    margin-left: 20px;
+    background-color: #F34C0C;
+    color: white;
+    border: 2px solid #F34C0C;
+}
+.btn:hover{
+    background-color: #be3c09;
+    border: 2px solid #be3c09;
+    color: #f1edec;
+    transition: 0.2s;
+}
+
+.btn1{
+    font-size: 15px;
+    padding: 10px;
+    /* margin: 10px; */
+    color: #F34C0C;
+    background-color: white;
+    border: 2px solid #F34C0C;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn1:hover{
+    background-color: #F34C0C;
+    border: 2px solid #F34C0C;
+    color: #f1edec;
+    transition: 0.5s;
+}
 .navbar-collapse h6{
     font-size: 20px;
     padding: 10px;
 }
-.btn{
+.navbar-collapse .btn{
     margin-right: 40px;
     background-color: #F34C0C;
     padding: 10px;
     color: white;
     border: 2px solid #F34C0C;
 }
-.btn:hover{
+.navbar-collapse .btn:hover{
     background-color: #be3c09;
     border: 2px solid #be3c09;
     color: #f1edec;
@@ -41,15 +90,117 @@ span{
 .head h4{
     color: #F34C0C;
 }
-.head .photo{
+.head .photo {
     height: 800px;
-    background-image: url(../image/Rectangle\ 101.png) ;
-    /* background-attachment: fixed; */
+    background-image: url(/image/Rectangle\ 101.png) ;
     background-size: cover;
 
 }
+/* chemistry department */
+
+.head .photo1{
+    height: 800px;
+    background-image: url(/image/Rectangle\ 177.png) ;
+    background-size: cover;
+
+}
+.head .photo2{
+    height: 800px;
+    background-image: url(/image/Rectangle-177.png) ;
+    background-size: cover;
+
+}
+.head .photo3{
+    height: 800px;
+    background-image: url(/image/Rectangle\ 178.png) ;
+    background-size: cover;
+}
+.head .photo4{
+    height: 800px;
+    background-image: url(/image/Rectangle\ 176.png) ;
+    background-size: cover;
+}
+.head .photo5{
+    height: 800px;
+    background-image: url(/image/Rectangle\ -75.png) ;
+    background-size: cover;
+}
+
+/* physics department */
+.head .physc1{
+    height: 800px;
+    background-image: url(/image/2151111235.jpg) ;
+    background-size: cover;
+}
+.head .physc2{
+    height: 800px;
+    background-image: url(/image/2151294601.jpg) ;
+    background-size: cover;
+}
+.head .physc3{
+    height: 800px;
+    background-image: url(/image/2151003770.jpg) ;
+    background-size: cover;
+}
 
 
+
+/* plant department */
+.head .plant1{
+    height: 800px;
+    background-image: url(/image/empty-laboratory-with-nobody-it-prepared-genetic-test-using-professional-microscope.jpg) ;
+    background-size: cover;
+}
+
+.head .plant2{
+    height: 800px;
+    background-image: url(../image/4431307.jpg) ;
+    background-size: cover;
+}
+
+.head .plant3{
+    height: 800px;
+    background-image: url(../image/2151111120.jpg) ;
+    background-size: cover;
+}
+
+
+
+/* goelogy department */
+
+.head .goelogy1{
+    height: 800px;
+    background-image: url(../image/2150724737.jpg) ;
+    background-size: cover;
+}
+
+
+.head .goelogy2{
+    height: 800px;
+    background-image: url(../image/2151158577.jpg) ;
+    background-size: cover;
+}
+
+
+.head .goelogy3{
+    height: 800px;
+    background-image: url(../image/environmental-pollution-factory-exterior-night.jpg) ;
+    background-size: cover;
+}
+
+
+/* zoology department */
+.head .zoology1{
+    height: 800px;
+    background-image: url(../image/medical-background-with-dna-strands-abstract-virus-cells.jpg) ;
+    background-size: cover;
+}
+
+.head .zoology2{
+    height: 800px;
+    background-image: url(../image/62067.jpg) ;
+    background-size: cover;
+}
 
 /* section two */
 
@@ -93,8 +244,23 @@ span{
     color: #F34C0C;
     padding: 10px;
 }
-
 .footer a{
     text-decoration: none;
 }
 
+@media( max-width:1379px) {
+    .photo,.photo1,.photo2,.photo3,.photo4,.photo5{
+        display: none;
+        }
+    .info h5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .info .dropdown-menu{
+        /* font-size: 9px;  */
+
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+    }
+}

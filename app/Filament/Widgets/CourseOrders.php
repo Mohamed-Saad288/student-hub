@@ -26,9 +26,6 @@ class CourseOrders extends BaseWidget
                     ->searchable()
                     ->limit(50),
                 TextColumn::make('instructor'),
-                                TextColumn::make('link')
-                ->limit(15)
-
             ]);
     }
 }

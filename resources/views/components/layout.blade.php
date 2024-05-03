@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!---->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- stylesheet -->
@@ -45,13 +47,13 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <div class="nav-middle flex-div">
             <div class="search-box flex-div">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="whoUs.html">من نحن</a>
-                    </li>
+{{--                    <li class="nav-item">--}}
+{{--                        <a class="nav-link" href="whoUs.html">مـــن نحـــن </a>--}}
+{{--                    </li>--}}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('courses.index') }}"> شرح</a>
                     </li>
@@ -62,36 +64,36 @@
                         <a class="nav-link" href="https://myu.mans.edu.eg/">المنصة الطلابية</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('competitions.index') }}"> المسابقات</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#depart"> الأقسام العلمية</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#section2">الرعاية</a>
                     </li>
+                    <li class="nav-item">
+                        @auth()
+                            @can('admin')
+                                <a  class="nav-link" href="/admin">Admin</a>
+                            @endcan
+                        @endauth
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-right flex-div ">
+                            <div class="navbar-collapse" id="navbarText">
+                                @auth()
+                                    <form action="{{route('logout')}}" method="POST">
+                                        @csrf
+                                        <button class=" btn btn-lg" type="submit">تسجيل خروج</button>
+                                    </form>
+                                @else
+                                    <a  class="btn1 " href="{{ route('login') }}" role="button" type="submit">تسجيل دخول</a>
+                                @endauth
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
 
-
-    </div>
-    <div class="nav-right flex-div ">
-        <div class="navbar-collapse" id="navbarText">
-            @auth()
-            @can('admin')
-                <a  class="btn1 " href="/admin" role="button" type="submit">Admin</a>
-            @endcan
-                    <form action="{{route('logout')}}" method="POST">
-                @csrf
-            <button class=" btn btn-lg nav-link" type="submit">Logout</button>
-            </form>
-
-            @else
-            <a  class="btn1 " href="{{ route('login') }}" role="button" type="submit">LogIn</a>
-            <a  class="btn  " href="{{ route('register.create') }}" role="button" type="submit">SignUp</a>
-            @endauth
-        </div>
     </div>
 </nav>
 
@@ -102,10 +104,10 @@
 <section class="footer">
     <!-- Footer -->
     <footer class=" foot text-center text-white" style="background-color: #080808;">
-        <div class="container col-6 p-4 pb-0">
+        <div class="container col-12 p-4 pb-0">
             <section class="foot-h">
                 <h2 class="fw-bold mb-2 ">Student<span>Hub</span></h2>
-                <p class="short">الرحلة الأكاديمية هي فرصة لتوسيع آفاقك وتطوير مهاراتك. استثمر وقتك وجهدك في التعلم بشكل فعّال، ولا تتردد في استكشاف ميادين جديدة، فالتحديات هي فرص للنمو والتقدم."</p>
+                <p class="short mr-2 ml-2">الرحلة الأكاديمية هي فرصة لتوسيع آفاقك وتطوير مهاراتك. استثمر وقتك وجهدك في التعلم بشكل فعّال، ولا تتردد في استكشاف ميادين جديدة، فالتحديات هي فرص للنمو والتقدم."</p>
             </section>
             <section class="location">
                 <p>
@@ -116,7 +118,7 @@
         </div>
         <hr>
         <!-- Copyright -->
-        <div class="text-center pb-2" >
+        <div class="container text-center pb-2" >
             Copyright© 2024
             <a class="text-white" href="#">All Rights Reserved by Glitch Hunters Team.</a>
         </div>
@@ -128,7 +130,10 @@
 
 <!-- swiper js -->
 <script src="assets/js/swiper-bundle.min.js"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <!-- javaScript -->
 <script src="assets/js/home.js"></script>
 <!-- bootstrap -->

@@ -8,6 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- stylesheet -->
     <link rel="stylesheet" href="assets/css/form.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--normalize sheet-->
     <link rel="stylesheet" href="assets/css/normalize.css">
     <!--font-awesome-->
@@ -35,7 +36,9 @@
 <!-- head -->
 <section class="head text-center">
     <div class="container">
-        <h1>Student<span>Hub</span></h1>
+        <a href="/">
+            <h1 data-aos="fade-up">Student<span>Hub</span></h1>
+        </a>
     </div>
 </section>
 
@@ -45,10 +48,10 @@
 <!--start login-->
 <section class="all vh-100 gradient-custom">
     <div class="container py-5 ">
-        <div class="row d-flex justify-content-center algn-items-centeri h-100">
-            <div class="col-6">
+        <div class="d-flex justify-content-center algn-items-centeri h-100">
+            <div class="col-10">
                 <div class="card" style="border-radius: 1rem;">
-                    <div class="card-body p-5 pb-0 ">
+                    <div class="card-body p-5 pb-0 " id="bost-card">
 
                         <div class="mb-md-5 mt-md-5 ">
 
@@ -57,10 +60,10 @@
                                 @csrf
                             <!-- Full name input -->
                             <div class="form-outline form-white mb-4">
-                                <label class="form-label"  for="typeName">Full Name</label>
+                                <label class="form-label"  for="typeName">الاسم</label>
                                 <div class="input-container">
                                     <i class="icon bi bi-person"></i>
-                                    <input type="text" id="typeName" name="name" value="{{ old('name') }}" class="form-control input-field form-control-lg" placeholder="Enter Your Name" />
+                                    <input type="text" id="typeName" name="name" value="{{ old('name') }}" class="form-control input-field form-control-lg" placeholder="" />
                                 </div>
                                @error('name')
                                 <p style="font-size: 13px;color: red;margin-top: 3px">{{$message}}</p>
@@ -69,13 +72,13 @@
 
                             <!-- level dropdown -->
                             <div class=" form-outline form-white mb-4 ">
-                                <label class="form-label" for="typeselect">Level</label>
-                                <select class="form-select" name="level" id="typeselect" aria-label="Default select example">
-                                    <option selected>Enter Your level</option>
-                                    <option value=1>One</option>
-                                    <option value=2>Two</option>
-                                    <option value=3>Three</option>
-                                    <option value=4>Four</option>
+                                <label class="form-label" for="typeselect">المستوى</label>
+                                <select class="form-select" dir="ltr" name="level" id="typeselect" aria-label="Default select example">
+                                    <option selected></option>
+                                    <option value=1>الاول</option>
+                                    <option value=2>الثاني</option>
+                                    <option value=3>الثالث</option>
+                                    <option value=4>الرابع</option>
                                 </select>
                                 @error('level')
                                 <p style="font-size: 13px;color: red;margin-top: 3px">{{$message}}</p>
@@ -85,10 +88,10 @@
 
                             <!-- level dropdown -->
                                 <div class="form-outline form-white mb-4">
-                                    <label class="form-label"  for="typeName">Department</label>
+                                    <label class="form-label"  for="typeName">القسم</label>
                                     <div class="input-container">
                                         <i class="icon bi bi-person"></i>
-                                        <input type="text" id="typeName" name="department" value="{{ old('department') }}" class="form-control input-field form-control-lg" placeholder="Enter Your Department" />
+                                        <input type="text" id="typeName" name="department" value="{{ old('department') }}" class="form-control input-field form-control-lg" placeholder="" />
                                     </div>
                                     @error('department')
                                     <p style="font-size: 13px;color: red;margin-top: 3px">{{$message}}</p>
@@ -97,10 +100,10 @@
 
                             <!-- College Id input -->
                             <div class="form-outline form-white mb-4">
-                                <label class="form-label" for="typeID"> College Id</label>
+                                <label class="form-label" for="typeID">الرقم التعريفي للكليه</label>
                                 <div class="input-container">
                                     <i class="icon bi bi-file-person"></i>
-                                    <input type="number" id="typeID" name="college_id" value="{{ old('college_id') }}" class="form-control input-field form-control-lg" placeholder="Enter Your Id" maxlength="14"/>
+                                    <input type="number" id="typeID" name="college_id" value="{{ old('college_id') }}" class="form-control input-field form-control-lg" placeholder="" maxlength="14"/>
                                 </div>
                                 @error('college_id')
                                 <p style="font-size: 13px;color: red;margin-top: 3px">{{$message}}</p>
@@ -109,10 +112,10 @@
 
                             <!-- Phone Number input -->
                             <div class="form-outline form-white mb-4">
-                                <label class="form-label" for="typeNo">Phone Number</label>
+                                <label class="form-label" for="typeNo">رقم الهاتف</label>
                                 <div class="input-container">
                                     <i class="icon bi bi-file-person"></i>
-                                    <input type="tel" id="typeNo" name="phone" value="{{ old('phone') }}" class="form-control input-field form-control-lg" placeholder="Enter Your Phone Number" maxlength="14"/>
+                                    <input dir="rtl" type="tel" id="typeNo" name="phone" value="{{ old('phone') }}" class="form-control input-field form-control-lg" placeholder="" maxlength="14"/>
                                 </div>
                                 @error('phone')
                                 <p style="font-size: 13px;color: red;margin-top: 3px">{{$message}}</p>
@@ -120,7 +123,7 @@
                             </div>
 
                             <!--sign up button  -->
-                                <button class="btn  col-12 mb-5 mt-5 btn-lg "  type="submit">Submit</button>
+                                <button class="btn  col-12 mb-5 mt-5 btn-lg "  type="submit">تسجيل</button>
                             </form>
                         </div>
 
@@ -137,8 +140,10 @@
 <!--end login-->
 
 
-
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <script src="assets/js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
 <script src="assets/js/code.jquery.com_jquery-3.7.1.min.js"></script>
 <script src="assets/js/bootstrap.js"></script>

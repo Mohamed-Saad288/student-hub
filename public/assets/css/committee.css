@@ -69,7 +69,25 @@ span{
     color: #F34C0C;
 }
 
-
+/* department */
+.depart img, #depart .item img{
+    border-radius: 10px;
+    box-shadow: 1px 2px 13px 6px #0000004d;
+    transition: .3s all ease-in-out;
+    width: 320px;
+}
+.depart img:hover, #depart .item img:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 2px 13px 6px #0000004d;
+}
+@media (max-width: 1110px) {
+    .depart img, #depart .item img{
+        width: 300px;
+    }
+    #depart .point1 img{
+        display: none;
+    }
+}
 
 /* section one */
 

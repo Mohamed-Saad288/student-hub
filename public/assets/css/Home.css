@@ -46,7 +46,11 @@ nav{
     top: 0;
     z-index: 10;
 }
-
+.navbar-collapse{
+    display: flex;
+    justify-content: flex-end;
+    /*padding-right: 45px;*/
+}
 span{
     color: #F34C0C;
     font-family: 'Dancing Script', cursive;
@@ -57,7 +61,7 @@ span{
     color: #000;
 }
 .navbar .navbar-brand{
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .btn{
@@ -96,7 +100,7 @@ span{
     padding: 10px;
 }
 .navbar-collapse .btn{
-    margin-right: 40px;
+    /*margin-right: 40px;*/
     background-color: #F34C0C;
     padding: 10px;
     color: white;
@@ -108,6 +112,40 @@ span{
     color: #f1edec;
     transition: 0.2s;
 }
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    gap: 5px;
+}
+
+
+.nav-item .nav-link {
+    position: relative;
+    font-size: 20px;
+    font-family: system-ui;
+}
+.nav-item .nav-link.active{
+    color: #fff !important;
+}
+.nav-link::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    margin-top: 1em;
+    background-color: #F34C0C;
+    bottom: -2px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+.nav-link:hover::before{
+    transform-origin: left;
+    transform: scaleX(1);
+}
 
 
 
@@ -118,17 +156,43 @@ span{
     color: white;
     text-align: center;
     height: 900px;
-    background-image: url(/image/Rectangle\ 36.png);
+    background-image: linear-gradient(to top, rgb(0,0,0,0.5)70%, rgb(0,0,0,0.5)30%),url(/image/Rectangle\ 36.png);
     /* background-attachment: fixed; */
     background-size: cover;
 }
 .head h1{
-    font-size: 100px;
+    font-size: 90px;
     /* color: #02420a; */
-    padding-top: 300px;
+    padding-top: 350px;
+    margin: 0;
 
 }
-
+.head .btn-flex{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.head .btn-home{
+    background: orangered;
+    padding: 20px 35px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 17px;
+}
+.head .btn-home2{
+    color: orangered;
+    background: #fff;
+    border: 1px solid orangered;
+    padding: 20px 35px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 17px;
+    transition: .2s all ease-in-out;
+}
+.head .btn-home2:hover{
+    color: #fff;
+    background: orangered;
+}
 .head h2{
     font-size: 70px;
 }
@@ -238,10 +302,14 @@ span{
     padding-top: 50px;
 }
 .our-section .item img{
-        box-shadow: 0 0 10px #F34C0C;
-
+    box-shadow: 0 0 10px #F34C0C;
     width: 200px;
     border-radius: 100%;
+    transition: .4s all ease-in-out;
+}
+.our-section .item img:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 0px 13px 6px #f34c0c5c;
 }
 
 /* section three */
@@ -280,6 +348,7 @@ span{
 }
 .footer .short{
     font-size: 15px;
+    padding: 0 60px;
 }
 .footer .location{
     font-size: 13px;
@@ -321,6 +390,7 @@ span{
 @media screen and (max-width: 779px) {
     .head h1{
         text-align: center;
+        font-size: 70px;
     }
     .book .container .item{
         width: 100%;
@@ -340,10 +410,17 @@ span{
 }
 @media screen and (max-width: 535px) {
     .head h1{
-        font-size: 30px;
+        font-size: 50px;
     }
     .head h2{
         font-size: 40px;
         text-align: center;
+    }
+    .head .btn-flex {
+        margin-top: 15px;
+    }
+    .head .btn-home2, .head .btn-home {
+        padding: 9px 16px;
+        font-size: 14px;
     }
 }

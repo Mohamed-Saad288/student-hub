@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\Api\V1\AuthController;
+use App\Http\Controllers\Api\V1\CompetitionController;
+use App\Http\Controllers\Api\V1\CourseController;
 use App\Http\Controllers\Api\V1\PostController;
+use App\Http\Controllers\Api\V1\StudentController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -18,7 +21,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('/register',[AuthController::class,'register']);
 Route::post('/login',[AuthController::class,'login']);
-
 Route::post('/logout',[AuthController::class,'logout'])->middleware('auth:sanctum');
-
 Route::get('/posts',[PostController::class,'index']);
+Route::get('/competitions',[CompetitionController::class,'index']);
+Route::get('/courses',[CourseController::class,'index']);
+Route::get('/search/{name}',[CourseController::class,'search']);
+Route::post('/students/{competition}/store',[StudentController::class,'store']);

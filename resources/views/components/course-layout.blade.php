@@ -41,8 +41,7 @@
     <div class="nav-middle flex-div">
         <div class="search-box flex-div">
             <form method="GET" action="{{ route('courses.index') }}">
-            <input type="text" name="search" placeholder="search" value="{{request('search')}}"
-            >
+            <input type="text" name="search" placeholder="search" value="{{request('search')}}">
             </form>
             <img src="image/search.png" alt="">
         </div>

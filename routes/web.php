@@ -17,23 +17,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-
-
-require __DIR__.'/auth.php';
-
-require __DIR__.'/committee.php';
-
-
-Route::middleware('auth')->group(function () {
-    Route::get('/courses', [CourseController::class, 'index'])->name('courses.index');
-    Route::get('/competitions', [CompetitionController::class, 'index'])->name('competitions.index');
-    Route::get('/{competition:slug}', [StudentController::class, 'create'])->name('student.create');
-    Route::post('/student/{competition}/store', [StudentController::class, 'store'])->name('student.store');
-});
-
-
+// home route
 Route::get('/', [PostController::class, 'index']);
 
+// auth routs
+require __DIR__.'/auth.php';
 
+// group with auth middleware
+Route::middleware('auth')->group(function () {
+    // get all courses route
+    Route::get('/courses', [CourseController::class, 'index'])
+        ->name('courses.index');
+    // get all competitions route
+    Route::get('/competitions', [CompetitionController::class, 'index'])
+        ->name('competitions.index');
+    // register to competition route
+    Route::get('/{competition:slug}', [StudentController::class, 'create'])
+        ->name('student.create');
+    // store student data in database
+    Route::post('/student/{competition}/store', [StudentController::class, 'store'])
+        ->name('student.store');
+});
+
+// department route
+require __DIR__.'/department.php';
 

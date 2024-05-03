@@ -57,7 +57,7 @@
 
 <!-- department style -->
 
-<x-department-style>
+<x-department-style class="col-lg-12">
 
     <!-- department cards -->
 

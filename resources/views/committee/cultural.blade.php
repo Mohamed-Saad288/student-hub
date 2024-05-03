@@ -53,20 +53,20 @@
 
     <div class="container ">
         <div class="row text-center">
-            <div class="item col-lg-3">
+            <div class="item col-lg-4">
                 <img src="image/top-view-islamic.jpg" width="300" height="250" alt="user1">
                 <P>مسابقة القراءن الكريم</P>
             </div>
-            <div class="item col-lg-3">
+            <div class="item col-lg-4">
                 <img src="image/free-photo-ramadan-kareem.jpg" width="300" height="250" alt="user2">
                 <P> أحاديث نبوية</P>
 
             </div>
-            <div class="item col-lg-3">
+            <div class="item col-lg-4">
                 <img src="image/close-up-blurry.jpg" width="300" height="250" alt="user1">
                 <P>ندوات دينية </P>
             </div>
-            <div class="item col-lg-3">
+            <div class="item col-lg-4">
                 <img src="image/still-life-crucifix.jpg" width="300" height="250" alt="user3">
                 <P>ترانيم</P>
 

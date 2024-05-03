@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin: 0;
+    background: #efefef;
 
 }
 
@@ -8,6 +9,13 @@ body{
 
 .head{
     margin-top: 100px;
+}
+.head a{
+    text-decoration: none;
+}
+.head h1{
+    font-size: 45px;
+    color: #000;
 }
 span{
     color: #F34C0C;
@@ -18,7 +26,7 @@ span{
 
 /*start login*/
 .card {
-    box-shadow: 0 0 10px #F34C0C;
+    box-shadow: 3px 4px 10px #3d3d3d57;
 
 }
 .card-body span{
@@ -41,13 +49,16 @@ span{
     padding-top: 5px;
 
 }
+#bost-card{
+    direction: rtl;
+}
 
 .icon{
     font-size: 25px;
     color: #F34C0C;
     min-width: 40px;
     top: 0;
-    right: 5px;
+    left: 5px;
     bottom: 0;
 }
 .form-outline select{

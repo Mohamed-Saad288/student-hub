@@ -26,6 +26,7 @@ body{
 }
 .input-container{
     position: relative;
+    direction:rtl;
 }
 .form-outline .icon{
     position: absolute;
@@ -38,7 +39,7 @@ body{
     color: #F34C0C;
     min-width: 40px;
     top: 0;
-    right: 5px;
+    left: -5px;
     bottom: 0;
 }
 .form-outline select{
@@ -68,7 +69,7 @@ body{
     font-size: 70px;
     font-weight: 700;
     height: 156px;
-    padding-left: 100px;
+    /*padding-left: 100px;*/
     margin-top: 250px;
 
 }

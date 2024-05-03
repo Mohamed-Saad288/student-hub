@@ -26,7 +26,7 @@ class StudentRequest extends FormRequest
             'phone' => ['required','numeric','digits:11'],
             'college_id' => ['required','numeric','digits:8'],
             'department' => ['required','string'],
-            'level' => ['required','numeric']
+            'level' => ['required','numeric'],
         ];
     }
     public function messages()

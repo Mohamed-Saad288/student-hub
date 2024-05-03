@@ -101,16 +101,45 @@ span{
 }
 .competition .ing{
     box-shadow: 0 0 10px #F34C0C;
+    height: 65%;
+    width: 32em !important;
 
-    width: 100%;
 }
 .competition  .time{
     float: right;
-
-
+    /*padding-top: 13px;*/
+    color: #5e5e5e;
+    padding-right: 10px;
 }
-
-
+#card-com{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 4em;
+    /*display: grid;*/
+    /*grid-template-columns: 20em 20em;*/
+}
+#card-com .card{
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px orangered;
+}
+#card-com .card-body{
+    direction: rtl;
+}
+.imgg{
+    width: 100%;
+    height: 11em;
+    border-radius: 10px;
+}
+.card-text{
+    height: 150px;
+    overflow: auto;
+}
+.com-title h1{
+    font-family: ui-monospace;
+    color: orangered;
+}
 
 /* footer */
 .foot{
@@ -141,7 +170,7 @@ span{
 @media screen and (max-width: 1200px) {
     .competition .col-6{
         width: 100%
-    
+
 }
 .competition .col-6 .ing{
     width: 100%;

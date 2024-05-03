@@ -15,14 +15,8 @@ class StudentController extends Controller
     }
     public function store(StudentRequest $request , Competition $competition)
     {
-        Student::create([
-            'name' => $request['name'],
-            'phone' => $request['phone'],
-            'college_id' => $request['college_id'],
-            'level' => $request['level'],
-            'department' => $request['department'],
-            'competition_id' => $competition->id
-        ]);
+        $competition->student()->create($request->all());
+
         return redirect('/')->with('success','تم التسجيل  بنجاح انتظر رساله');
     }
 }

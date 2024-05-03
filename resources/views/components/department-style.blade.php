@@ -11,7 +11,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="row ">
+        <div class="d-flex justify-content-evenly flex-wrap ">
             {{ $slot }}
         </div>
     </div>

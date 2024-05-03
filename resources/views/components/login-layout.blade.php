@@ -31,15 +31,15 @@
 
 <section class="all vh-100 gradient-custom">
     <div class="container py-5 h-100">
-        <div class="row d-flex justify-content-center algn-items-centeri h-100">
+        <div class="row d-flex justify-content-center algn-items-centeri h-100" dir="rtl">
             <div class="col">
                 <div class="card" style="border-radius: 1rem;">
-                    <div class="card-body p-5 pb-0 ">
+                    <div class="card-body p-5 pm-0 pt-0 pb-0 ">
 
                         <div class="mb-md-5 mt-md-5 ">
-                            <div class="card-title text-center">
-                                <h2 class="fw-bold mb-1 mt-0 ">Student<span>Hub</span></h2>
-                                <p>Sign in to enjoy endless flow of inspiration from the world around you</p>
+                            <div class="card-title mb-4 text-center">
+                                <h2 class="fw-bold mb-3 mt-0 ">Student<span>Hub</span></h2>
+                                <p>قم بتسجيل الدخول لتستمتع بتدفق لا نهاية له من الإلهام من العالم من حولك</p>
                             </div>
 
                             {{$slot}}
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="hello col text-white text-center fw-bold ">
-                <h1>Hello Again</h1>
+                <h1>مرحبا من جديد</h1>
             </div>
         </div>
     </div>

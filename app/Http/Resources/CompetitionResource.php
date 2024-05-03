@@ -5,7 +5,7 @@ namespace App\Http\Resources;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class PostResource extends JsonResource
+class CompetitionResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -15,6 +15,7 @@ class PostResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
+            'id' => $this->id,
             'description' => $this->description,
             'image' =>  $this->image ?  config('app.url'). '/'. $this?->image : null,
             'created_at' => $this->created_at->diffForHumans()

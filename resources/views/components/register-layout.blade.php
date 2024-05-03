@@ -34,14 +34,14 @@
 <section class="all vh-100 gradient-custom">
     <div class="container py-5 h-100">
 
-        <div class="row d-flex justify-content-center algn-items-centeri h-100">
+        <div class="row d-flex justify-content-center algn-items-centeri h-100" dir="rtl">
             <div class="col">
                 <div class="card " style="border-radius: 1rem;">
-                    <div class="card-body p-5 pb-0 ">
+                    <div class="card-body p-5 pm-0 pt-0 pb-0 ">
 
                         <div class="mb-md-5 mt-md-4 ">
                             <div class="card-title text-center">
-                                <small>Sign Up</small>
+                                <small>أشتراك</small>
                                 <h2 class="fw-bold mb-2 ">Student<span>Hub</span></h2>
 
                             </div>
@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="welcome col text-white text-center fw-bold ">
-                <h1>Hello! Sign Up to Get Started</h1>
+                <h1>مرحبا! قم بالتسجيل لتبدأ رحلتك.</h1>
             </div>
         </div>
     </div>
