@@ -9,7 +9,7 @@ class CompetitionController extends Controller
 {
     public function index()
     {
-        $competitions = Competition::latest()->get();
+        $competitions = Competition::latest()->SimplePaginate(9);
 
         return view('competition.index',['competitions' => $competitions]);
     }

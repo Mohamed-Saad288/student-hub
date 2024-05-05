@@ -1,4 +1,4 @@
-@props(['name','placeHolder','label','type','icon'])
+@props(['name','label','type','icon'])
 
 <div class="form-outline form-white mb-4">
     <label class="form-label" for="typeName">{{$label}}</label>
@@ -7,7 +7,6 @@
         <input type="{{$type}}"
               name="{{$name}}"
                class="form-control input-field form-control-lg"
-               placeholder="{{$placeHolder}}"
                value="{{old($name)}}"
         />
     </div>

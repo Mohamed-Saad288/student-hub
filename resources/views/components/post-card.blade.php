@@ -1,19 +1,18 @@
 @props(['posts'])
 @if($posts->count())
-    @foreach($posts as $post)
+@foreach($posts as $post)
 <div class="card swiper-slide">
     <div class="image-content">
         <span class="overlay"></span>
         <div class="card-image">
-            <img
-                src="{{ asset($post->image) ?
+            <img src="{{ asset($post->image) ?
                 asset('storage/' . $post->image) :
-                 asset('image/Rectangle 53.png') }}"
-                class="card-img-top"
-                alt="Post Image">
+                 asset('image/Rectangle 53.png') }}" class="card-img-top" alt="Post Image">
         </div>
         <div class="card-body ">
-            <p class="time " style="float: right;color: grey">{{ $post->created_at->diffForHumans() }}</p>
+            <p class="time " style="float: right;color: grey">
+                {{ $post->created_at->diffForHumans() }}
+            </p>
             <p>Student<span>Hub</span>
                 <img src="image/Ellipse 13.png">
             </p>
@@ -25,5 +24,5 @@
         </div>
     </div>
 </div>
-    @endforeach
+@endforeach
 @endif

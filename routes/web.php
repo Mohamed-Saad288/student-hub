@@ -20,6 +20,20 @@ use Illuminate\Support\Facades\Route;
 // home route
 Route::get('/', [PostController::class, 'index']);
 
+// department route
+require __DIR__.'/department.php';
+
+// locations route
+Route::get('/locations',function ()
+{
+    return view('locations');
+})->name('locations');
+
+Route::get('/about-us',function ()
+{
+    return view('about-us');
+})->name('about-us');
+
 // auth routs
 require __DIR__.'/auth.php';
 
@@ -39,6 +53,7 @@ Route::middleware('auth')->group(function () {
         ->name('student.store');
 });
 
-// department route
-require __DIR__.'/department.php';
+
+
+
 

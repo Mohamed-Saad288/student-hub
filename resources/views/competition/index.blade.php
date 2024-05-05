@@ -13,4 +13,6 @@
 
     </x-competition-style>
 
+
 </x-competition-layout>
+<div style="display: flex;align-items: center; justify-content: center;margin-bottom: 10px">{{ $competitions->links() }}</div>

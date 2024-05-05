@@ -51,14 +51,11 @@
         <div class="nav-middle flex-div">
             <div class="search-box flex-div">
                 <ul class="navbar-nav">
-{{--                    <li class="nav-item">--}}
-{{--                        <a class="nav-link" href="whoUs.html">مـــن نحـــن </a>--}}
-{{--                    </li>--}}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('courses.index') }}"> شرح</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">الأماكن</a>
+                        <a class="nav-link" href="{{ route('locations') }}">الأماكن</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://myu.mans.edu.eg/">المنصة الطلابية</a>

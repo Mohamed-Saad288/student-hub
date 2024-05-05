@@ -85,6 +85,12 @@ span{
 }
 
 
+/* Dropdwon */
+.info .dropdown-menu #ww{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 /* head */
 .head h4{
@@ -92,7 +98,7 @@ span{
 }
 .head .photo {
     height: 800px;
-    background-image: url(/image/Rectangle\ 101.png) ;
+    background-image: url(../../image/Rectangle\ 101.png) ;
     background-size: cover;
 
 }
@@ -100,46 +106,46 @@ span{
 
 .head .photo1{
     height: 800px;
-    background-image: url(/image/Rectangle\ 177.png) ;
+    background-image: url(../../image/Rectangle\ 177.png) ;
     background-size: cover;
 
 }
 .head .photo2{
     height: 800px;
-    background-image: url(/image/Rectangle-177.png) ;
+    background-image: url(../../image/Rectangle-177.png) ;
     background-size: cover;
 
 }
 .head .photo3{
     height: 800px;
-    background-image: url(/image/Rectangle\ 178.png) ;
+    background-image: url(../../image/Rectangle\ 178.png) ;
     background-size: cover;
 }
 .head .photo4{
     height: 800px;
-    background-image: url(/image/Rectangle\ 176.png) ;
+    background-image: url(../../image/Rectangle\ 176.png) ;
     background-size: cover;
 }
 .head .photo5{
     height: 800px;
-    background-image: url(/image/Rectangle\ -75.png) ;
+    background-image: url(../../image/Rectangle\ -75.png) ;
     background-size: cover;
 }
 
 /* physics department */
 .head .physc1{
     height: 800px;
-    background-image: url(/image/2151111235.jpg) ;
+    background-image: url(../../image/2151111235.jpg) ;
     background-size: cover;
 }
 .head .physc2{
     height: 800px;
-    background-image: url(/image/2151294601.jpg) ;
+    background-image: url(../../image/2151294601.jpg) ;
     background-size: cover;
 }
 .head .physc3{
     height: 800px;
-    background-image: url(/image/2151003770.jpg) ;
+    background-image: url(../../image/2151003770.jpg) ;
     background-size: cover;
 }
 
@@ -148,19 +154,19 @@ span{
 /* plant department */
 .head .plant1{
     height: 800px;
-    background-image: url(/image/empty-laboratory-with-nobody-it-prepared-genetic-test-using-professional-microscope.jpg) ;
+    background-image: url(../../image/empty-laboratory-with-nobody-it-prepared-genetic-test-using-professional-microscope.jpg) ;
     background-size: cover;
 }
 
 .head .plant2{
     height: 800px;
-    background-image: url(../image/4431307.jpg) ;
+    background-image: url(../../image/4431307.jpg) ;
     background-size: cover;
 }
 
 .head .plant3{
     height: 800px;
-    background-image: url(../image/2151111120.jpg) ;
+    background-image: url(../../image/2151111120.jpg) ;
     background-size: cover;
 }
 
@@ -170,21 +176,21 @@ span{
 
 .head .goelogy1{
     height: 800px;
-    background-image: url(../image/2150724737.jpg) ;
+    background-image: url(../../image/2150724737.jpg) ;
     background-size: cover;
 }
 
 
 .head .goelogy2{
     height: 800px;
-    background-image: url(../image/2151158577.jpg) ;
+    background-image: url(../../image/2151158577.jpg) ;
     background-size: cover;
 }
 
 
 .head .goelogy3{
     height: 800px;
-    background-image: url(../image/environmental-pollution-factory-exterior-night.jpg) ;
+    background-image: url(../../image/environmental-pollution-factory-exterior-night.jpg) ;
     background-size: cover;
 }
 
@@ -202,11 +208,19 @@ span{
     background-size: cover;
 }
 
-/* section two */
-
+    /* section two */
+.info{
+    text-align: -webkit-center;
+}
 .info h5 ,h6{
     color: #F34C0C;
     margin: 20px;
+}
+.info video{
+    /* width: 60%; */
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px 0px #ccc;
 }
 .info .dropdown .btn{
     width: 70%;
@@ -215,11 +229,9 @@ span{
     border: none;
     margin: 20px;
 }
-.info .dropdown{
-    padding-right: 70px;
-}
+
 .info .dropdown-menu{
-    width: 70%;
+    width: 69%;
     direction: rtl;
     float: right;
 }
@@ -249,18 +261,21 @@ span{
 }
 
 @media( max-width:1379px) {
-    .photo,.photo1,.photo2,.photo3,.photo4,.photo5{
+    .photo,.photo1,.photo2,.photo3,.photo4,.photo5,
+    .physc1,.physc2,.physc3,
+    .plant1,.plant2,.plant3,
+    .goelogy1,.goelogy2,.goelogy3,
+    .zoology1,.zoology2{
         display: none;
-        }
+    }
     .info h5{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .info .dropdown-menu{
-        /* font-size: 9px;  */
-
+    /* .info .dropdown-menu{
+        font-size: 9px;
         display: grid;
         grid-template-columns: repeat(2,auto);
-    }
+    }  */
 }

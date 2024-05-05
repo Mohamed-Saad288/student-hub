@@ -14,7 +14,7 @@ class CourseController extends Controller
             Course::
             latest()->filter
             (request(['search']))
-                ->SimplePaginate(6)->withQueryString()
+                ->SimplePaginate(9)->withQueryString()
 
         ]);
     }

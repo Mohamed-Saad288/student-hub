@@ -61,17 +61,17 @@
 
     <!-- department cards -->
 
-    <x-department-card name="قسم الفيزيا" image="image/Rectangle 164.png"/>
+    <x-department-card name="قسم الفيزيا" image="image/Rectangle 164.png" url="/physics" />
 
-    <x-department-card name="قسم الكيمياء" image="image/Rectangle 161.png" style_css="item col-lg-4"/>
+    <x-department-card name="قسم الكيمياء" image="image/Rectangle 161.png"  url="/chemistry"/>
 
-    <x-department-card name="قسم الرياضيات" image="image/Rectangle 159.png"/>
+    <x-department-card name="قسم الرياضيات" image="image/Rectangle 159.png"  url="/math"/>
 
-    <x-department-card name="قسم علم الحيوان" image="image/Rectangle 163.png"/>
+    <x-department-card name="قسم علم الحيوان" image="image/Rectangle 163.png" url="/animal"/>
 
-    <x-department-card name="قسم الجيولوجيا" image="image/Rectangle 160.png" style_css="item col-lg-4"/>
+    <x-department-card name="قسم الجيولوجيا" image="image/Rectangle 160.png"  url="/geology" />
 
-    <x-department-card name="قسم النبات" image="image/Rectangle 165.png"/>
+    <x-department-card name="قسم النبات" image="image/Rectangle 165.png"  url="/plant"/>
 
     <!-- end department cards -->
 

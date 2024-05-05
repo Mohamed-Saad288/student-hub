@@ -3,28 +3,43 @@
         @csrf
 <!-- Email input -->
 
-<x-form.input label="بريد الألكتروني" name="email" placeHolder="" type="email" icon="icon bi bi-envelope" />
+<x-form.input
+ label="بريد الألكتروني"
+ name="email"
+ type="email"
+  icon="icon bi bi-envelope" />
 
 <!-- password input -->
 
-<x-form.input label="كلمة المرور" name="password" placeHolder="" type="password" icon="icon bi-eye" />
-
+<x-form.input
+label="كلمة المرور"
+ name="password"
+type="password"
+icon="icon bi-eye" />
 
 
 <!-- forgot link  -->
 
 <div class="col">
-    <a href="{{ route('password.request') }}">هل نسيت كلمة المرور؟</a>
+    <a
+    href="{{ route('password.request') }}"
+    >هل نسيت كلمة المرور؟</a>
 </div>
 
 <!--sign up button  -->
 
-<button class="btn  col-12 mb-5 mt-5 btn-lg " type="submit">تسجيل</button>
+<button
+ class="btn  col-12 mb-5 mt-5 btn-lg "
+ type="submit">تسجيل</button>
 
 
 <div>
     <p
-        class="m-2 pb-3 text-center">ليس لديك حساب؟ <a href="{{route('register.create')}}" class=" fw-bold">اشتراك</a>
+        class="m-2 pb-3 text-center">ليس لديك حساب؟
+        <a
+         href="{{route('register.create')}}"
+         class=" fw-bold">اشتراك
+        </a>
 
     </p>
 
