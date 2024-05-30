@@ -36,5 +36,5 @@ college, and browsing news at the university level.
 | GET |  api/v1/courses | Get All Courses |
 | GET | api/v1//competitions | Get ALL Copetitions |
 | GET | api/v1/posts | Get ALL Posts |
-| GET |  api/v1/search | search into courses route  |
+| GET |  api/v1/courses/search | search into courses route  |
 | POST | api/v1/competiton/student | register to competition |
