@@ -12,12 +12,15 @@ college, and browsing news at the university level.
     <h2>Application</h2>
 ![image](https://github.com/Mohamed-Saad288/student-hub/assets/131921827/8878f1d8-09c7-4392-832d-86fe5c22d7c6)
 </h3>
+
 # Note 
  <ul>
      <li> Dashboard Using Filament</li>
       <li> Api Auth With Sanctum </li>
  </ul>
-# System features
+ 
+# System Feature
+
 <ul>
     <li>Auth [REGISTER , LOGIN , LOGOUT , RESET PASSWORD]</li> 
     <li>Admin Can [CREATE,EDIT,DELETE] Post</li>
