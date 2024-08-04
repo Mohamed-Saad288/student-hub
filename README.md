@@ -13,13 +13,13 @@ college, and browsing news at the university level.
 ![image](https://github.com/Mohamed-Saad288/student-hub/assets/131921827/8878f1d8-09c7-4392-832d-86fe5c22d7c6)
 </h3>
 
-# Note 
+## Note 
  <ul>
      <li> Dashboard Using Filament</li>
       <li> Api Auth With Sanctum </li>
  </ul>
  
-# System Feature
+##33 System Feature
 
 <ul>
     <li>Auth [REGISTER , LOGIN , LOGOUT , RESET PASSWORD]</li> 
@@ -29,7 +29,7 @@ college, and browsing news at the university level.
     <li>Search in courses</li>
 </ul>
 
-# ROUTS
+## ROUTS
 
 | HTTP Method | EndPoint | Description |
 |---|---|---|
