@@ -19,7 +19,7 @@ college, and browsing news at the university level.
       <li> Api Auth With Sanctum </li>
  </ul>
  
-##33 System Feature
+## 33 System Feature
 
 <ul>
     <li>Auth [REGISTER , LOGIN , LOGOUT , RESET PASSWORD]</li> 
